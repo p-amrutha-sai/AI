@@ -1,0 +1,7 @@
+{
+  "python": "3.13.13",
+  "implementation": "CPython",
+  "os": "Darwin",
+  "run_date": "2026-10-29",
+  "runtime_dependencies": "Python standard library"
+}

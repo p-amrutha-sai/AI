@@ -1,0 +1,723 @@
+{
+  "seed": 42,
+  "metrics": {
+    "seed": 42,
+    "decisions": 144,
+    "impressions": 356,
+    "click_rate": 0.351123595505618,
+    "purchase_rate": 0.09831460674157304,
+    "cumulative_reward": 88.24595047132914,
+    "reward_per_decision": 0.6128191004953413,
+    "retention": 1.0,
+    "satisfaction": 0.49067400355543667,
+    "slate_diversity": 0.59366391184573,
+    "category_entropy": 0.9657333599967419,
+    "merchant_jain": 0.5210327248807762,
+    "item_hhi": 0.047468753945208934,
+    "repetition_rate": 0.08426966292134831,
+    "novelty": 0.37640449438202245,
+    "purchase_brier": 0.09851505036783559,
+    "hard_violations": 0,
+    "replans": 79,
+    "learned_state_coverage": 0.9307692307692308,
+    "merchant_exposures": {
+      "m0": 31,
+      "m1": 43,
+      "m2": 180,
+      "m3": 69,
+      "m4": 13,
+      "m5": 20
+    },
+    "strategy_counts": {
+      "diverse": 63,
+      "explore": 37,
+      "fair": 8,
+      "personalized": 36
+    }
+  },
+  "events": [
+    {
+      "round": 4,
+      "kind": "price_change",
+      "merchant": "m0",
+      "multiplier": 1.25
+    },
+    {
+      "round": 6,
+      "kind": "negative_review",
+      "item": "i000",
+      "verified": true
+    },
+    {
+      "round": 6,
+      "kind": "merchant_response",
+      "merchant": "m0",
+      "item": "i000",
+      "new_price": 9.5,
+      "description_version": 2
+    },
+    {
+      "round": 8,
+      "kind": "budget_change",
+      "user": "u0",
+      "budget": 12.0
+    },
+    {
+      "round": 9,
+      "kind": "merchant_response",
+      "merchant": "m3",
+      "item": "i330",
+      "new_price": 22.8,
+      "description_version": 2
+    },
+    {
+      "round": 10,
+      "kind": "new_merchant",
+      "merchant": "m5",
+      "new_items": 4
+    },
+    {
+      "round": 12,
+      "kind": "interest_shift",
+      "user": "u0",
+      "declared_category": "tech"
+    },
+    {
+      "round": 12,
+      "kind": "interest_shift",
+      "user": "u3",
+      "declared_category": "books"
+    },
+    {
+      "round": 12,
+      "kind": "merchant_response",
+      "merchant": "m1",
+      "item": "i120",
+      "new_price": 15.2,
+      "description_version": 2
+    },
+    {
+      "round": 16,
+      "kind": "stock_outage",
+      "merchant": "m1"
+    },
+    {
+      "round": 18,
+      "kind": "popularity_growth",
+      "merchant": "m0",
+      "added_per_item": 100
+    }
+  ],
+  "selected_turns": [
+    {
+      "round": 0,
+      "user": "u0",
+      "intent": "ask_preference",
+      "strategy": "diverse",
+      "observed_effect_success": true,
+      "items": [],
+      "feedback": [
+        "clarified"
+      ],
+      "reward": -0.04,
+      "satisfaction": 0.65,
+      "active": true,
+      "diversity": 0,
+      "predictions": [],
+      "decision": {
+        "intent": "ask_preference",
+        "strategy": "diverse",
+        "state": "0:1:1:1:0:0:0:0",
+        "action_index": 2,
+        "items": [],
+        "status": "information_action",
+        "plan": {
+          "actions": [
+            "ask_preference",
+            "familiar",
+            "introduce_category",
+            "compare"
+          ],
+          "cost": 3.9,
+          "expanded": 5,
+          "initial": {
+            "known": false,
+            "supported": false,
+            "introduced": false,
+            "compared": false,
+            "engaged": false,
+            "affordable": true,
+            "rested": true
+          },
+          "goal": "all seven campaign facts true",
+          "reasons": [
+            "initial_or_observed_effect_failed"
+          ],
+          "user": "u0"
+        }
+      },
+      "observations": [],
+      "beliefs_after": {
+        "books": {
+          "mean": 0.6421,
+          "std": 0.1695,
+          "approx_95_interval": [
+            0.3099,
+            0.9743
+          ],
+          "evidence_mass": 7.0
+        },
+        "tech": {
+          "mean": 0.5,
+          "std": 0.2236,
+          "approx_95_interval": [
+            0.0617,
+            0.9383
+          ],
+          "evidence_mass": 4.0
+        },
+        "home": {
+          "mean": 0.5,
+          "std": 0.2236,
+          "approx_95_interval": [
+            0.0617,
+            0.9383
+          ],
+          "evidence_mass": 4.0
+        },
+        "sports": {
+          "mean": 0.5,
+          "std": 0.2236,
+          "approx_95_interval": [
+            0.0617,
+            0.9383
+          ],
+          "evidence_mass": 4.0
+        }
+      }
+    },
+    {
+      "round": 1,
+      "user": "u0",
+      "intent": "familiar",
+      "strategy": "diverse",
+      "observed_effect_success": true,
+      "items": [
+        "i000",
+        "i100",
+        "i020"
+      ],
+      "feedback": [
+        "click",
+        "ignore",
+        "click"
+      ],
+      "reward": 0.9413958970150457,
+      "satisfaction": 0.6508724356344036,
+      "active": true,
+      "diversity": 2,
+      "predictions": [
+        {
+          "prediction": 0.2320152474367187,
+          "purchase": 0
+        },
+        {
+          "prediction": 0.22276826293742918,
+          "purchase": 0
+        },
+        {
+          "prediction": 0.1789955357142857,
+          "purchase": 0
+        }
+      ],
+      "decision": {
+        "intent": "familiar",
+        "strategy": "diverse",
+        "state": "0:1:1:1:0:0:0:0",
+        "action_index": 2,
+        "favorite_category": "books",
+        "items": [
+          "i000",
+          "i100",
+          "i020"
+        ],
+        "status": "satisfied",
+        "constraints": {
+          "size": 3,
+          "max_recent_repeats": 2,
+          "total_budget": null,
+          "min_categories": 2,
+          "min_merchants": 2,
+          "diversity_weight": 0.55,
+          "fairness_weight": 0
+        },
+        "slate": {
+          "items": [
+            "i000",
+            "i100",
+            "i020"
+          ],
+          "score": 3.073080538546942,
+          "status": "satisfied",
+          "explanations": [],
+          "rejected": {
+            "over per-item budget": 6
+          },
+          "explored": 286,
+          "pool_size": 12
+        },
+        "paths": {
+          "i000": [
+            "user:u0",
+            "category:books",
+            "item:i000"
+          ],
+          "i100": [
+            "user:u0",
+            "category:books",
+            "item:i100"
+          ],
+          "i020": [
+            "user:u0",
+            "category:books",
+            "category:sports",
+            "category:home",
+            "item:i020"
+          ]
+        },
+        "predictions": {
+          "i000": {
+            "preference": 0.6412256351740225,
+            "uncertainty": 0.17021815901557513,
+            "purchase_probability": 0.2320152474367187,
+            "reliability": 0.6,
+            "quality": 0.675,
+            "risk_lower_bound": 0.4710074761584474
+          },
+          "i100": {
+            "preference": 0.6412256351740225,
+            "uncertainty": 0.17021815901557513,
+            "purchase_probability": 0.22276826293742918,
+            "reliability": 0.6,
+            "quality": 0.675,
+            "risk_lower_bound": 0.4710074761584474
+          },
+          "i020": {
+            "preference": 0.5,
+            "uncertainty": 0.22360679774997896,
+            "purchase_probability": 0.1789955357142857,
+            "reliability": 0.6,
+            "quality": 0.675,
+            "risk_lower_bound": 0.27639320225002106
+          }
+        },
+        "explanations": {
+          "i000": "diverse strategy; familiar campaign action; estimated purchase=0.232; price=8.00 within budget=32.00.",
+          "i100": "diverse strategy; familiar campaign action; estimated purchase=0.223; price=10.00 within budget=32.00.",
+          "i020": "diverse strategy; familiar campaign action; estimated purchase=0.179; price=14.00 within budget=32.00."
+        },
+        "plan": {
+          "actions": [
+            "ask_preference",
+            "familiar",
+            "introduce_category",
+            "compare"
+          ],
+          "cost": 3.9,
+          "expanded": 5,
+          "initial": {
+            "known": false,
+            "supported": false,
+            "introduced": false,
+            "compared": false,
+            "engaged": false,
+            "affordable": true,
+            "rested": true
+          },
+          "goal": "all seven campaign facts true",
+          "reasons": [
+            "initial_or_observed_effect_failed"
+          ],
+          "user": "u0"
+        }
+      },
+      "observations": [
+        {
+          "user": "u0",
+          "item": "i000",
+          "kind": "click",
+          "round": 1,
+          "rating": null,
+          "verified": false,
+          "gift": false,
+          "attentive": true,
+          "fulfilled": null
+        },
+        {
+          "user": "u0",
+          "item": "i100",
+          "kind": "ignore",
+          "round": 1,
+          "rating": null,
+          "verified": false,
+          "gift": false,
+          "attentive": false,
+          "fulfilled": null
+        },
+        {
+          "user": "u0",
+          "item": "i020",
+          "kind": "click",
+          "round": 1,
+          "rating": null,
+          "verified": false,
+          "gift": false,
+          "attentive": true,
+          "fulfilled": null
+        }
+      ],
+      "beliefs_after": {
+        "books": {
+          "mean": 0.644,
+          "std": 0.1663,
+          "approx_95_interval": [
+            0.3181,
+            0.97
+          ],
+          "evidence_mass": 7.29
+        },
+        "tech": {
+          "mean": 0.5,
+          "std": 0.2236,
+          "approx_95_interval": [
+            0.0617,
+            0.9383
+          ],
+          "evidence_mass": 4.0
+        },
+        "home": {
+          "mean": 0.5161,
+          "std": 0.2161,
+          "approx_95_interval": [
+            0.0926,
+            0.9396
+          ],
+          "evidence_mass": 4.35
+        },
+        "sports": {
+          "mean": 0.5,
+          "std": 0.2236,
+          "approx_95_interval": [
+            0.0617,
+            0.9383
+          ],
+          "evidence_mass": 4.0
+        }
+      }
+    },
+    {
+      "round": 8,
+      "user": "u0",
+      "intent": "lower_cost_alternative",
+      "strategy": "explore",
+      "observed_effect_success": true,
+      "items": [
+        "i000",
+        "i200",
+        "i100"
+      ],
+      "feedback": [
+        "click",
+        "like",
+        "ignore"
+      ],
+      "reward": 0.6463066076419337,
+      "satisfaction": 0.6107743893502904,
+      "active": true,
+      "diversity": 1,
+      "predictions": [
+        {
+          "prediction": 0.08833465214453048,
+          "purchase": 0
+        },
+        {
+          "prediction": 0.09235794466828465,
+          "purchase": 0
+        },
+        {
+          "prediction": 0.08932834356761434,
+          "purchase": 0
+        }
+      ],
+      "decision": {
+        "intent": "lower_cost_alternative",
+        "strategy": "explore",
+        "state": "0:1:1:1:0:0:0:2",
+        "action_index": 4,
+        "favorite_category": "books",
+        "items": [
+          "i000",
+          "i200",
+          "i100"
+        ],
+        "status": "tradeoff",
+        "constraints": {
+          "size": 3,
+          "max_recent_repeats": 2,
+          "total_budget": null,
+          "min_categories": 2,
+          "min_merchants": 2,
+          "diversity_weight": 0.2,
+          "fairness_weight": 0
+        },
+        "slate": {
+          "items": [
+            "i000",
+            "i200",
+            "i100"
+          ],
+          "score": 1.5069393363528545,
+          "status": "tradeoff",
+          "explanations": [
+            "Category diversity target unmet: feasibility or relevance trade-off."
+          ],
+          "rejected": {
+            "over per-item budget": 37
+          },
+          "explored": 4,
+          "pool_size": 3
+        },
+        "paths": {
+          "i000": [
+            "user:u0",
+            "item:i000"
+          ],
+          "i200": [
+            "user:u0",
+            "item:i200"
+          ],
+          "i100": [
+            "user:u0",
+            "item:i100"
+          ]
+        },
+        "predictions": {
+          "i000": {
+            "preference": 0.6108589287490528,
+            "uncertainty": 0.1627428943660689,
+            "purchase_probability": 0.08833465214453048,
+            "reliability": 0.507384731068334,
+            "quality": 0.6657024612134296,
+            "risk_lower_bound": 0.44811603438298386
+          },
+          "i200": {
+            "preference": 0.6108589287490528,
+            "uncertainty": 0.1627428943660689,
+            "purchase_probability": 0.09235794466828465,
+            "reliability": 0.821460116657458,
+            "quality": 0.7237534945786833,
+            "risk_lower_bound": 0.44811603438298386
+          },
+          "i100": {
+            "preference": 0.6108589287490528,
+            "uncertainty": 0.1627428943660689,
+            "purchase_probability": 0.08932834356761434,
+            "reliability": 0.5618165362742364,
+            "quality": 0.6789256236522061,
+            "risk_lower_bound": 0.44811603438298386
+          }
+        },
+        "explanations": {
+          "i000": "explore strategy; lower_cost_alternative campaign action; estimated purchase=0.088; price=9.50 within budget=12.00.",
+          "i200": "explore strategy; lower_cost_alternative campaign action; estimated purchase=0.092; price=12.00 within budget=12.00.",
+          "i100": "explore strategy; lower_cost_alternative campaign action; estimated purchase=0.089; price=10.00 within budget=12.00."
+        },
+        "plan": {
+          "actions": [
+            "lower_cost_alternative",
+            "introduce_category",
+            "compare"
+          ],
+          "cost": 2.8,
+          "expanded": 4,
+          "initial": {
+            "known": true,
+            "supported": true,
+            "introduced": false,
+            "compared": false,
+            "engaged": true,
+            "affordable": false,
+            "rested": true
+          },
+          "goal": "all seven campaign facts true",
+          "reasons": [
+            "budget_change",
+            "precondition_changed"
+          ],
+          "user": "u0"
+        }
+      },
+      "observations": [
+        {
+          "user": "u0",
+          "item": "i000",
+          "kind": "click",
+          "round": 8,
+          "rating": null,
+          "verified": false,
+          "gift": false,
+          "attentive": true,
+          "fulfilled": null
+        },
+        {
+          "user": "u0",
+          "item": "i200",
+          "kind": "like",
+          "round": 8,
+          "rating": null,
+          "verified": false,
+          "gift": false,
+          "attentive": true,
+          "fulfilled": null
+        },
+        {
+          "user": "u0",
+          "item": "i100",
+          "kind": "ignore",
+          "round": 8,
+          "rating": null,
+          "verified": false,
+          "gift": false,
+          "attentive": false,
+          "fulfilled": null
+        }
+      ],
+      "beliefs_after": {
+        "books": {
+          "mean": 0.6396,
+          "std": 0.1509,
+          "approx_95_interval": [
+            0.3439,
+            0.9354
+          ],
+          "evidence_mass": 9.125
+        },
+        "tech": {
+          "mean": 0.5122,
+          "std": 0.2157,
+          "approx_95_interval": [
+            0.0894,
+            0.935
+          ],
+          "evidence_mass": 4.369
+        },
+        "home": {
+          "mean": 0.4271,
+          "std": 0.1636,
+          "approx_95_interval": [
+            0.1064,
+            0.7479
+          ],
+          "evidence_mass": 8.137
+        },
+        "sports": {
+          "mean": 0.3701,
+          "std": 0.1876,
+          "approx_95_interval": [
+            0.0024,
+            0.7379
+          ],
+          "evidence_mass": 5.623
+        }
+      }
+    },
+    {
+      "round": 12,
+      "user": "u0",
+      "intent": "ask_preference",
+      "strategy": "explore",
+      "observed_effect_success": true,
+      "items": [],
+      "feedback": [
+        "clarified"
+      ],
+      "reward": -0.04,
+      "satisfaction": 0.5981551465534816,
+      "active": true,
+      "diversity": 0,
+      "predictions": [],
+      "decision": {
+        "intent": "ask_preference",
+        "strategy": "explore",
+        "state": "0:1:1:1:1:1:0:0",
+        "action_index": 4,
+        "items": [],
+        "status": "information_action",
+        "plan": {
+          "actions": [
+            "ask_preference",
+            "familiar",
+            "introduce_category",
+            "compare"
+          ],
+          "cost": 3.9,
+          "expanded": 5,
+          "initial": {
+            "known": false,
+            "supported": false,
+            "introduced": false,
+            "compared": false,
+            "engaged": false,
+            "affordable": true,
+            "rested": true
+          },
+          "goal": "all seven campaign facts true",
+          "reasons": [
+            "new_interest",
+            "reject"
+          ],
+          "user": "u0"
+        }
+      },
+      "observations": [],
+      "beliefs_after": {
+        "books": {
+          "mean": 0.631,
+          "std": 0.1535,
+          "approx_95_interval": [
+            0.3301,
+            0.932
+          ],
+          "evidence_mass": 8.876
+        },
+        "tech": {
+          "mean": 0.6234,
+          "std": 0.179,
+          "approx_95_interval": [
+            0.2726,
+            0.9743
+          ],
+          "evidence_mass": 6.327
+        },
+        "home": {
+          "mean": 0.4315,
+          "std": 0.1683,
+          "approx_95_interval": [
+            0.1017,
+            0.7613
+          ],
+          "evidence_mass": 7.662
+        },
+        "sports": {
+          "mean": 0.3811,
+          "std": 0.1914,
+          "approx_95_interval": [
+            0.0059,
+            0.7563
+          ],
+          "evidence_mass": 5.437
+        }
+      }
+    }
+  ]
+}

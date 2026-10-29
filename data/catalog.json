@@ -1,0 +1,649 @@
+{
+  "categories": [
+    "books",
+    "tech",
+    "home",
+    "sports"
+  ],
+  "related_categories": [
+    [
+      "books",
+      "tech"
+    ],
+    [
+      "tech",
+      "home"
+    ],
+    [
+      "home",
+      "sports"
+    ],
+    [
+      "sports",
+      "books"
+    ]
+  ],
+  "merchants": [
+    {
+      "id": "m0",
+      "name": "Synthetic seller 0"
+    },
+    {
+      "id": "m1",
+      "name": "Synthetic seller 1"
+    },
+    {
+      "id": "m2",
+      "name": "Synthetic seller 2"
+    },
+    {
+      "id": "m3",
+      "name": "Synthetic seller 3"
+    },
+    {
+      "id": "m4",
+      "name": "Synthetic seller 4"
+    }
+  ],
+  "items": [
+    {
+      "id": "i000",
+      "name": "Learning journal - seller 0",
+      "category": "books",
+      "merchant": "m0",
+      "price": 8.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 120,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i001",
+      "name": "Puzzle collection - seller 0",
+      "category": "books",
+      "merchant": "m0",
+      "price": 12.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 120,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i010",
+      "name": "USB task light - seller 0",
+      "category": "tech",
+      "merchant": "m0",
+      "price": 28.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 120,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i011",
+      "name": "Compact keyboard - seller 0",
+      "category": "tech",
+      "merchant": "m0",
+      "price": 32.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 120,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i020",
+      "name": "Desk organizer - seller 0",
+      "category": "home",
+      "merchant": "m0",
+      "price": 14.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 120,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i021",
+      "name": "Reusable bottle - seller 0",
+      "category": "home",
+      "merchant": "m0",
+      "price": 18.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 120,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i030",
+      "name": "Resistance band - seller 0",
+      "category": "sports",
+      "merchant": "m0",
+      "price": 18.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 120,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i031",
+      "name": "Training mat - seller 0",
+      "category": "sports",
+      "merchant": "m0",
+      "price": 22.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 120,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i100",
+      "name": "Learning journal - seller 1",
+      "category": "books",
+      "merchant": "m1",
+      "price": 10.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 7,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i101",
+      "name": "Puzzle collection - seller 1",
+      "category": "books",
+      "merchant": "m1",
+      "price": 14.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 8,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i110",
+      "name": "USB task light - seller 1",
+      "category": "tech",
+      "merchant": "m1",
+      "price": 30.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 7,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i111",
+      "name": "Compact keyboard - seller 1",
+      "category": "tech",
+      "merchant": "m1",
+      "price": 34.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 8,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i120",
+      "name": "Desk organizer - seller 1",
+      "category": "home",
+      "merchant": "m1",
+      "price": 16.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 7,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i121",
+      "name": "Reusable bottle - seller 1",
+      "category": "home",
+      "merchant": "m1",
+      "price": 20.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 8,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i130",
+      "name": "Resistance band - seller 1",
+      "category": "sports",
+      "merchant": "m1",
+      "price": 20.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 7,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i131",
+      "name": "Training mat - seller 1",
+      "category": "sports",
+      "merchant": "m1",
+      "price": 24.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 8,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i200",
+      "name": "Learning journal - seller 2",
+      "category": "books",
+      "merchant": "m2",
+      "price": 12.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 9,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i201",
+      "name": "Puzzle collection - seller 2",
+      "category": "books",
+      "merchant": "m2",
+      "price": 16.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 10,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i210",
+      "name": "USB task light - seller 2",
+      "category": "tech",
+      "merchant": "m2",
+      "price": 32.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 9,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i211",
+      "name": "Compact keyboard - seller 2",
+      "category": "tech",
+      "merchant": "m2",
+      "price": 36.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 10,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i220",
+      "name": "Desk organizer - seller 2",
+      "category": "home",
+      "merchant": "m2",
+      "price": 18.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 9,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i221",
+      "name": "Reusable bottle - seller 2",
+      "category": "home",
+      "merchant": "m2",
+      "price": 22.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 10,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i230",
+      "name": "Resistance band - seller 2",
+      "category": "sports",
+      "merchant": "m2",
+      "price": 22.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 9,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i231",
+      "name": "Training mat - seller 2",
+      "category": "sports",
+      "merchant": "m2",
+      "price": 26.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 10,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i300",
+      "name": "Learning journal - seller 3",
+      "category": "books",
+      "merchant": "m3",
+      "price": 14.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 11,
+      "claimed_quality": 0.98
+    },
+    {
+      "id": "i301",
+      "name": "Puzzle collection - seller 3",
+      "category": "books",
+      "merchant": "m3",
+      "price": 18.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 12,
+      "claimed_quality": 0.98
+    },
+    {
+      "id": "i310",
+      "name": "USB task light - seller 3",
+      "category": "tech",
+      "merchant": "m3",
+      "price": 34.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 11,
+      "claimed_quality": 0.98
+    },
+    {
+      "id": "i311",
+      "name": "Compact keyboard - seller 3",
+      "category": "tech",
+      "merchant": "m3",
+      "price": 38.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 12,
+      "claimed_quality": 0.98
+    },
+    {
+      "id": "i320",
+      "name": "Desk organizer - seller 3",
+      "category": "home",
+      "merchant": "m3",
+      "price": 20.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 11,
+      "claimed_quality": 0.98
+    },
+    {
+      "id": "i321",
+      "name": "Reusable bottle - seller 3",
+      "category": "home",
+      "merchant": "m3",
+      "price": 24.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 12,
+      "claimed_quality": 0.98
+    },
+    {
+      "id": "i330",
+      "name": "Resistance band - seller 3",
+      "category": "sports",
+      "merchant": "m3",
+      "price": 24.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 11,
+      "claimed_quality": 0.98
+    },
+    {
+      "id": "i331",
+      "name": "Training mat - seller 3",
+      "category": "sports",
+      "merchant": "m3",
+      "price": 28.0,
+      "stock": 80,
+      "regions": [
+        "north",
+        "south"
+      ],
+      "popularity": 12,
+      "claimed_quality": 0.98
+    },
+    {
+      "id": "i400",
+      "name": "Learning journal - seller 4",
+      "category": "books",
+      "merchant": "m4",
+      "price": 16.0,
+      "stock": 80,
+      "regions": [
+        "north"
+      ],
+      "popularity": 13,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i401",
+      "name": "Puzzle collection - seller 4",
+      "category": "books",
+      "merchant": "m4",
+      "price": 20.0,
+      "stock": 80,
+      "regions": [
+        "north"
+      ],
+      "popularity": 14,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i410",
+      "name": "USB task light - seller 4",
+      "category": "tech",
+      "merchant": "m4",
+      "price": 36.0,
+      "stock": 80,
+      "regions": [
+        "north"
+      ],
+      "popularity": 13,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i411",
+      "name": "Compact keyboard - seller 4",
+      "category": "tech",
+      "merchant": "m4",
+      "price": 40.0,
+      "stock": 80,
+      "regions": [
+        "north"
+      ],
+      "popularity": 14,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i420",
+      "name": "Desk organizer - seller 4",
+      "category": "home",
+      "merchant": "m4",
+      "price": 22.0,
+      "stock": 80,
+      "regions": [
+        "north"
+      ],
+      "popularity": 13,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i421",
+      "name": "Reusable bottle - seller 4",
+      "category": "home",
+      "merchant": "m4",
+      "price": 26.0,
+      "stock": 80,
+      "regions": [
+        "north"
+      ],
+      "popularity": 14,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i430",
+      "name": "Resistance band - seller 4",
+      "category": "sports",
+      "merchant": "m4",
+      "price": 26.0,
+      "stock": 80,
+      "regions": [
+        "north"
+      ],
+      "popularity": 13,
+      "claimed_quality": 0.85
+    },
+    {
+      "id": "i431",
+      "name": "Training mat - seller 4",
+      "category": "sports",
+      "merchant": "m4",
+      "price": 30.0,
+      "stock": 80,
+      "regions": [
+        "north"
+      ],
+      "popularity": 14,
+      "claimed_quality": 0.85
+    }
+  ],
+  "users": [
+    {
+      "id": "u0",
+      "budget": 32,
+      "region": "north",
+      "declared_category": "books",
+      "allowed_categories": []
+    },
+    {
+      "id": "u1",
+      "budget": 45,
+      "region": "south",
+      "declared_category": "tech",
+      "allowed_categories": []
+    },
+    {
+      "id": "u2",
+      "budget": 65,
+      "region": "north",
+      "declared_category": "home",
+      "allowed_categories": []
+    },
+    {
+      "id": "u3",
+      "budget": 85,
+      "region": "south",
+      "declared_category": "sports",
+      "allowed_categories": []
+    },
+    {
+      "id": "u4",
+      "budget": 24,
+      "region": "north",
+      "declared_category": "books",
+      "allowed_categories": [
+        "books",
+        "home"
+      ]
+    },
+    {
+      "id": "u5",
+      "budget": 40,
+      "region": "south",
+      "declared_category": "tech",
+      "allowed_categories": []
+    }
+  ]
+}

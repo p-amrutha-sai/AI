@@ -1,0 +1,360 @@
+[
+  {
+    "args": [
+      "--user",
+      "u0",
+      "--budget",
+      "25",
+      "--strategy",
+      "diverse"
+    ],
+    "output": {
+      "intent": "familiar",
+      "strategy": "diverse",
+      "state": "0:1:1:1:0:0:0:0",
+      "action_index": 2,
+      "favorite_category": "books",
+      "items": [
+        "i000",
+        "i100",
+        "i020"
+      ],
+      "status": "satisfied",
+      "constraints": {
+        "size": 3,
+        "max_recent_repeats": 2,
+        "total_budget": null,
+        "min_categories": 2,
+        "min_merchants": 2,
+        "diversity_weight": 0.55,
+        "fairness_weight": 0
+      },
+      "slate": {
+        "items": [
+          "i000",
+          "i100",
+          "i020"
+        ],
+        "score": 2.920935103532149,
+        "status": "satisfied",
+        "explanations": [],
+        "rejected": {
+          "over per-item budget": 15
+        },
+        "explored": 286,
+        "pool_size": 12
+      },
+      "paths": {
+        "i000": [
+          "user:u0",
+          "category:books",
+          "item:i000"
+        ],
+        "i100": [
+          "user:u0",
+          "category:books",
+          "item:i100"
+        ],
+        "i020": [
+          "user:u0",
+          "category:books",
+          "category:sports",
+          "category:home",
+          "item:i020"
+        ]
+      },
+      "predictions": {
+        "i000": {
+          "preference": 0.6,
+          "uncertainty": 0.2,
+          "purchase_probability": 0.21365142857142855,
+          "reliability": 0.6,
+          "quality": 0.675,
+          "risk_lower_bound": 0.39999999999999997
+        },
+        "i100": {
+          "preference": 0.6,
+          "uncertainty": 0.2,
+          "purchase_probability": 0.20224285714285714,
+          "reliability": 0.6,
+          "quality": 0.675,
+          "risk_lower_bound": 0.39999999999999997
+        },
+        "i020": {
+          "preference": 0.5,
+          "uncertainty": 0.22360679774997896,
+          "purchase_probability": 0.1631142857142857,
+          "reliability": 0.6,
+          "quality": 0.675,
+          "risk_lower_bound": 0.27639320225002106
+        }
+      },
+      "explanations": {
+        "i000": "diverse strategy; familiar campaign action; estimated purchase=0.214; price=8.00 within budget=25.00.",
+        "i100": "diverse strategy; familiar campaign action; estimated purchase=0.202; price=10.00 within budget=25.00.",
+        "i020": "diverse strategy; familiar campaign action; estimated purchase=0.163; price=14.00 within budget=25.00."
+      },
+      "plan": {
+        "actions": [
+          "familiar",
+          "introduce_category",
+          "compare"
+        ],
+        "cost": 3.1,
+        "expanded": 4,
+        "initial": {
+          "known": true,
+          "supported": false,
+          "introduced": false,
+          "compared": false,
+          "engaged": false,
+          "affordable": true,
+          "rested": true
+        },
+        "goal": "all seven campaign facts true",
+        "reasons": [
+          "initial_or_observed_effect_failed"
+        ],
+        "user": "u0"
+      }
+    }
+  },
+  {
+    "args": [
+      "--user",
+      "u0",
+      "--budget",
+      "1"
+    ],
+    "output": {
+      "intent": "familiar",
+      "strategy": "diverse",
+      "state": "0:1:1:1:0:0:0:0",
+      "action_index": 2,
+      "favorite_category": "books",
+      "items": [],
+      "status": "infeasible",
+      "constraints": {
+        "size": 3,
+        "max_recent_repeats": 2,
+        "total_budget": null,
+        "min_categories": 2,
+        "min_merchants": 2,
+        "diversity_weight": 0.55,
+        "fairness_weight": 0
+      },
+      "slate": {
+        "items": [],
+        "score": 0.0,
+        "status": "infeasible",
+        "explanations": [
+          "Only 0/3 items fit the hard constraints.",
+          "Category diversity target unmet: feasibility or relevance trade-off.",
+          "Merchant coverage target unmet: feasibility or relevance trade-off."
+        ],
+        "rejected": {
+          "over per-item budget": 40
+        },
+        "explored": 0,
+        "pool_size": 0
+      },
+      "paths": {},
+      "predictions": {},
+      "explanations": {},
+      "plan": {
+        "actions": [
+          "familiar",
+          "introduce_category",
+          "compare"
+        ],
+        "cost": 3.1,
+        "expanded": 4,
+        "initial": {
+          "known": true,
+          "supported": false,
+          "introduced": false,
+          "compared": false,
+          "engaged": false,
+          "affordable": true,
+          "rested": true
+        },
+        "goal": "all seven campaign facts true",
+        "reasons": [
+          "initial_or_observed_effect_failed"
+        ],
+        "user": "u0"
+      }
+    }
+  },
+  {
+    "args": [
+      "--user",
+      "u4",
+      "--allowed-categories",
+      "books"
+    ],
+    "output": {
+      "intent": "familiar",
+      "strategy": "diverse",
+      "state": "0:1:1:1:0:0:0:0",
+      "action_index": 2,
+      "favorite_category": "books",
+      "items": [
+        "i000",
+        "i100",
+        "i001"
+      ],
+      "status": "tradeoff",
+      "constraints": {
+        "size": 3,
+        "max_recent_repeats": 2,
+        "total_budget": null,
+        "min_categories": 2,
+        "min_merchants": 2,
+        "diversity_weight": 0.55,
+        "fairness_weight": 0
+      },
+      "slate": {
+        "items": [
+          "i000",
+          "i100",
+          "i001"
+        ],
+        "score": 2.569196428571429,
+        "status": "tradeoff",
+        "explanations": [
+          "Category diversity target unmet: feasibility or relevance trade-off."
+        ],
+        "rejected": {
+          "outside mandatory category allow-list": 30,
+          "over per-item budget": 15
+        },
+        "explored": 165,
+        "pool_size": 10
+      },
+      "paths": {
+        "i000": [
+          "user:u4",
+          "category:books",
+          "item:i000"
+        ],
+        "i100": [
+          "user:u4",
+          "category:books",
+          "item:i100"
+        ],
+        "i001": [
+          "user:u4",
+          "category:books",
+          "item:i001"
+        ]
+      },
+      "predictions": {
+        "i000": {
+          "preference": 0.6,
+          "uncertainty": 0.2,
+          "purchase_probability": 0.21175,
+          "reliability": 0.6,
+          "quality": 0.675,
+          "risk_lower_bound": 0.39999999999999997
+        },
+        "i100": {
+          "preference": 0.6,
+          "uncertainty": 0.2,
+          "purchase_probability": 0.19986607142857143,
+          "reliability": 0.6,
+          "quality": 0.675,
+          "risk_lower_bound": 0.39999999999999997
+        },
+        "i001": {
+          "preference": 0.6,
+          "uncertainty": 0.2,
+          "purchase_probability": 0.18798214285714285,
+          "reliability": 0.6,
+          "quality": 0.675,
+          "risk_lower_bound": 0.39999999999999997
+        }
+      },
+      "explanations": {
+        "i000": "diverse strategy; familiar campaign action; estimated purchase=0.212; price=8.00 within budget=24.00.",
+        "i100": "diverse strategy; familiar campaign action; estimated purchase=0.200; price=10.00 within budget=24.00.",
+        "i001": "diverse strategy; familiar campaign action; estimated purchase=0.188; price=12.00 within budget=24.00."
+      },
+      "plan": {
+        "actions": [
+          "familiar",
+          "introduce_category",
+          "compare"
+        ],
+        "cost": 3.1,
+        "expanded": 4,
+        "initial": {
+          "known": true,
+          "supported": false,
+          "introduced": false,
+          "compared": false,
+          "engaged": false,
+          "affordable": true,
+          "rested": true
+        },
+        "goal": "all seven campaign facts true",
+        "reasons": [
+          "initial_or_observed_effect_failed"
+        ],
+        "user": "u4"
+      }
+    }
+  },
+  {
+    "args": [
+      "--user",
+      "u0",
+      "--budget",
+      "40",
+      "--total-budget",
+      "25"
+    ],
+    "output": {
+      "items": [
+        {
+          "id": "i000",
+          "name": "Learning journal - seller 0",
+          "category": "books",
+          "merchant": "m0",
+          "price": 8.0,
+          "stock": 80,
+          "regions": [
+            "north",
+            "south"
+          ],
+          "popularity": 120,
+          "claimed_quality": 0.85,
+          "description_version": 1
+        },
+        {
+          "id": "i120",
+          "name": "Desk organizer - seller 1",
+          "category": "home",
+          "merchant": "m1",
+          "price": 16.0,
+          "stock": 80,
+          "regions": [
+            "north",
+            "south"
+          ],
+          "popularity": 7,
+          "claimed_quality": 0.85,
+          "description_version": 1
+        }
+      ],
+      "score": 0.4146214285714286,
+      "status": "tradeoff",
+      "explanations": [
+        "Only 2/3 items fit the hard constraints."
+      ],
+      "rejected": {},
+      "explored": 82,
+      "pool_size": 40
+    }
+  }
+]

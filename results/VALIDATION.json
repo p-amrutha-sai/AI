@@ -1,0 +1,102 @@
+{
+  "scope": {
+    "search_csp": "implemented",
+    "planning": "implemented",
+    "uncertainty": "implemented",
+    "reinforcement_learning": "implemented",
+    "generative_ai": "excluded by user request"
+  },
+  "checks": {
+    "unit_and_integration_tests_passed": 24,
+    "full_reproduction_command_completed": true,
+    "fresh_folder_tests_passed": true,
+    "fresh_folder_demo_matches_saved_output": true,
+    "fresh_folder_seed_100_matches_all_six_saved_variants": true,
+    "held_out_evaluation_runs": 72,
+    "total_hard_constraint_violations": 0,
+    "pdf_pages": 9,
+    "pdf_visual_review": "all nine rendered pages checked; numerical tables and results page checked at larger scale"
+  },
+  "training": {
+    "episodes": 200,
+    "recommendation_updates": 24557,
+    "learned_state_bins": 143,
+    "environment_seed_range": [
+      500000,
+      500200
+    ]
+  },
+  "evaluation": {
+    "seeds": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111
+    ],
+    "rounds": 24,
+    "users": 6,
+    "training_seeds": [
+      500000,
+      500200
+    ],
+    "frozen_policy": true,
+    "interval": "normal approximation over independent seed-level values; exploratory, no multiple-testing correction",
+    "fairness": "unweighted Jain exposure equality, not relevance-conditioned fairness",
+    "synthetic": true
+  },
+  "remaining_administrative_items": [
+    "Actual team member names and truthful individual contribution records were not supplied."
+  ],
+  "file_sha256": {
+    ".gitignore": "6f1fe172df6d8a75c57a95e7b1afdfb48a1a0bb52181887ac337b628e74527ba",
+    "README.md": "836a48d1639a314fd3db6028ab49ecae306b74cf07d6216d1cf414708e62f36f",
+    "data/DATA_CARD.md": "67187da8678ff1cefb6ac47faba90fea4ffe18a3c6f552d31ce9e9d6c13e2241",
+    "data/catalog.json": "7dd4ff73785e2af30f8905acba7988658af2caa071454ddf621d514e72d32041",
+    "data/generate_catalog.py": "4f4fe58ab03bc00352777d2f3463803725f7f6905f6236cef4fdea491abf9a3b",
+    "docs/ACKNOWLEDGMENTS.md": "beb0143b3ac2422d3c6f820dae3237caf481493f94d9b4a6069a98b40544e0e2",
+    "docs/CONTRIBUTIONS.md": "5147ed566736839de11e4f4278c41bd137fb86f895bddf2a8857c24c908fcf8a",
+    "docs/EVALUATION_GUIDE.md": "69416d6fc1e36c02c17184bd7ba0acc7728fe9ce3dfc7f4e14b28a8a53dece33",
+    "docs/FINAL_REPORT.md": "c5f37b27d5d70860a134900c3dbf809945d6a1df0b242aa3e0c3e82b548d402b",
+    "docs/FINAL_REPORT.pdf": "f6f2e66db23fe384ba8686afa16412a7b9f637b2897c4c3b9d6470973f2c0d2b",
+    "docs/REQUIREMENTS.md": "6d8bdde0535bacd08f33c41d2ef3f62998a79d295aa7b81f4f0ec62424155021",
+    "docs/TEAM_GUIDE.md": "3bd2bc5a239ba55b805b5c70caa8ab240331e1cdab83fde1f12c48fd2b767555",
+    "recsys/__init__.py": "d4d28bd67190c43c418f3c2933312e620e75f669b0597eae1e852a563644abf1",
+    "recsys/__main__.py": "22e59a98bc19d6c30122f0e49fd02c9b06c2bdfe193cdbb46fca80247fb1cc5c",
+    "recsys/evaluation.py": "3935c1dc369f0ec7416122c7beae9de3ee9e2521a4c79160c6b3c33eed75a588",
+    "recsys/models.py": "f461cbb22d7c3b870ea6278e7b4b28106181212b3775c6b599dcd7496dc9fdda",
+    "recsys/planning.py": "454b7534bb86c2e0b2eed571656b86781081bf6381ae693801fd981b31315da5",
+    "recsys/platform.py": "9adc38e84b8c0c23ca681a108a0c53405b3ef727804262f2e7895b4b252ad58e",
+    "recsys/rl.py": "e5c53743d24855d13e92c1f60a1256912b02748a73fe3462933f89ac4fe80238",
+    "recsys/search.py": "7abfcae0bba92c3a7d031b095d22af250a73038f305a50be9bf133edd5b4969d",
+    "recsys/simulation.py": "648faa6c8e04a704e2a7498cada541c34e4975195a712d7f8ce1be6168a990b0",
+    "recsys/uncertainty.py": "fdea769b2b66ae8cfdec2a743b78825e859a960d89412a92aae465403498146a",
+    "requirements.txt": "0d286b2cb8efdc4e2443fe4d9c0122f223391d95893c9e7cb8be19e86f9b5e5a",
+    "results/charts/reward_comparison.svg": "9658f10e6096f287de82fd3ef14fdf02e3db61d25fa007e2619b4c1052618061",
+    "results/charts/satisfaction_trajectory.svg": "13316a4eb24deda4b17944a8aefbb1e4b6428cd246d4e64e61d4bc7466f00f73",
+    "results/clean_run.txt": "8553b7b26eb615e9f1908cf97f7e10f70b68d9e55851da47491c2f9f501afe29",
+    "results/cli_examples.json": "d0a4b6db10aec55221eedbd0ff835edcd35a3acd8983e2110afae90e67d95084",
+    "results/demo.json": "8a62662ecc04561e0eb8c4214148e4bfaadbdd71479900e6761cdca387ee987c",
+    "results/demo_excerpt.json": "9a6c7d8f974f728cd02c7bc328ebd216a0f703811b37ddd7b13a6fbd8a999a32",
+    "results/environment.json": "d1ac1be9ae749f1b4d148985b793f6e3a1ac8899692938e7e7996c8b60ef2760",
+    "results/evaluation.json": "3e258b201a0b30e38ef70bd895450f463ac9384cea42845e020df8eccdf20cdd",
+    "results/metrics.csv": "bb3449690f0478a233b6cf6d0ea350ca9f3b699653f497f780c53c096844a572",
+    "results/policy.json": "cd15ddf2551135eb98432f625d362814897019eaf12bfe5443d1b4fa7ff726f7",
+    "results/reproduction_log.txt": "5b35bf4b3b87c6621b038119312d03400d0e69b4b4ac4d6ef65a6baaf1009c2e",
+    "results/round_metrics.json": "b31d87338bfadf9626db647408f7d4330d2e7b8abe32410818683ff46abd6701",
+    "results/summary.md": "cf0ba4749769e719f13ed681ecb65274503cdea757b130bb431154f7a763fcab",
+    "results/test_results.txt": "972aef7a93b5d0932772bfd814320b67f25e9582cabc393e7f87e81067eeb581",
+    "run_all.py": "d8c3be39f7fcd5889249d9d0dae81acda76f877a15ea5d78b31056c54129628d",
+    "tests/test_modules.py": "e4d52796b62468ca688ede73502341a323d943bc0e6f39ea1ae22ea25fda7a05",
+    "tools/build_report.py": "1593142f2eabe7531dcd09b77c79e2bcd0e6fa46bf20025a1bf80402ee091f1c"
+  },
+  "team_size": 9,
+  "documentation_update": "Added proposed nine-person responsibility allocation and implementation walkthrough; no runtime code or numerical results changed."
+}

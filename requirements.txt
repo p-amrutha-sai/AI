@@ -1,0 +1,2 @@
+# Runtime: Python >= 3.10. All project code and tests use the standard library.
+# No pip installation, model downloads, API keys or network access required.

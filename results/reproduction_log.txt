@@ -1,0 +1,86 @@
+test_deterministic_seed_and_dynamic_scenarios (test_modules.IntegrationTests.test_deterministic_seed_and_dynamic_scenarios) ... ok
+test_evaluation_rejects_training_overlap (test_modules.IntegrationTests.test_evaluation_rejects_training_overlap) ... ok
+test_hidden_preferences_are_not_part_of_public_catalog (test_modules.IntegrationTests.test_hidden_preferences_are_not_part_of_public_catalog) ... ok
+test_introduction_effect_requires_positive_alternative_category (test_modules.IntegrationTests.test_introduction_effect_requires_positive_alternative_category) ... ok
+test_purchase_baseline_selects_highest_feasible_probabilities (test_modules.IntegrationTests.test_purchase_baseline_selects_highest_feasible_probabilities) ... ok
+test_training_changes_policy_and_evaluation_is_frozen (test_modules.IntegrationTests.test_training_changes_policy_and_evaluation_is_frozen) ... ok
+test_budget_and_interest_changes_invalidate_plan (test_modules.PlanningTests.test_budget_and_interest_changes_invalidate_plan) ... ok
+test_failed_effect_is_not_assumed_and_rejection_replans (test_modules.PlanningTests.test_failed_effect_is_not_assumed_and_rejection_replans) ... ok
+test_plan_has_valid_preconditions_and_reaches_goal (test_modules.PlanningTests.test_plan_has_valid_preconditions_and_reaches_goal) ... ok
+test_context_changes_with_budget_satisfaction_and_history (test_modules.RLTests.test_context_changes_with_budget_satisfaction_and_history) ... ok
+test_q_update_terminal_and_discounted_bootstrap (test_modules.RLTests.test_q_update_terminal_and_discounted_bootstrap) ... ok
+test_saved_frozen_policy_roundtrip (test_modules.RLTests.test_saved_frozen_policy_roundtrip) ... ok
+test_bfs_paths_are_edges_and_reach_all_items (test_modules.SearchTests.test_bfs_paths_are_edges_and_reach_all_items) ... ok
+test_cart_budget_and_short_slate (test_modules.SearchTests.test_cart_budget_and_short_slate) ... ok
+test_exact_csp_matches_independent_bruteforce (test_modules.SearchTests.test_exact_csp_matches_independent_bruteforce) ... ok
+test_independent_hard_filters_and_no_silent_relaxation (test_modules.SearchTests.test_independent_hard_filters_and_no_silent_relaxation) ... ok
+test_mandatory_categories_never_relaxed_for_diversity (test_modules.SearchTests.test_mandatory_categories_never_relaxed_for_diversity) ... ok
+test_reviews_and_history_are_in_graph (test_modules.SearchTests.test_reviews_and_history_are_in_graph) ... ok
+test_beta_update_and_decay_towards_prior (test_modules.UncertaintyTests.test_beta_update_and_decay_towards_prior) ... ok
+test_click_is_weak_gift_is_discounted (test_modules.UncertaintyTests.test_click_is_weak_gift_is_discounted) ... ok
+test_merchant_claims_do_not_create_trust (test_modules.UncertaintyTests.test_merchant_claims_do_not_create_trust) ... ok
+test_review_corroboration_does_not_double_count_transaction (test_modules.UncertaintyTests.test_review_corroboration_does_not_double_count_transaction) ... ok
+test_unattended_silence_not_preference_dislike (test_modules.UncertaintyTests.test_unattended_silence_not_preference_dislike) ... ok
+test_verified_review_has_more_evidence (test_modules.UncertaintyTests.test_verified_review_has_more_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.526s
+
+OK
+Training episode 25/200
+Training episode 50/200
+Training episode 75/200
+Training episode 100/200
+Training episode 125/200
+Training episode 150/200
+Training episode 175/200
+Training episode 200/200
+Saved 143 learned states to results/policy.json
+Evaluating popular
+Evaluating personalized
+Evaluating fixed_diversity
+Evaluating learned
+Evaluating no_planning
+Evaluating no_belief_updates
+popular              reward/decision=0.3279 satisfaction=0.3534 violations=0
+personalized         reward/decision=0.5103 satisfaction=0.4977 violations=0
+fixed_diversity      reward/decision=0.6608 satisfaction=0.4529 violations=0
+learned              reward/decision=0.6935 satisfaction=0.4943 violations=0
+no_planning          reward/decision=0.7293 satisfaction=0.4949 violations=0
+no_belief_updates    reward/decision=0.6071 satisfaction=0.4317 violations=0
+{
+  "seed": 42,
+  "decisions": 144,
+  "impressions": 356,
+  "click_rate": 0.351123595505618,
+  "purchase_rate": 0.09831460674157304,
+  "cumulative_reward": 88.24595047132914,
+  "reward_per_decision": 0.6128191004953413,
+  "retention": 1.0,
+  "satisfaction": 0.49067400355543667,
+  "slate_diversity": 0.59366391184573,
+  "category_entropy": 0.9657333599967419,
+  "merchant_jain": 0.5210327248807762,
+  "item_hhi": 0.047468753945208934,
+  "repetition_rate": 0.08426966292134831,
+  "novelty": 0.37640449438202245,
+  "purchase_brier": 0.09851505036783559,
+  "hard_violations": 0,
+  "replans": 79,
+  "learned_state_coverage": 0.9307692307692308,
+  "merchant_exposures": {
+    "m0": 31,
+    "m1": 43,
+    "m2": 180,
+    "m3": 69,
+    "m4": 13,
+    "m5": 20
+  },
+  "strategy_counts": {
+    "diverse": 63,
+    "explore": 37,
+    "fair": 8,
+    "personalized": 36
+  }
+}
+Full module traces: results/demo.json
