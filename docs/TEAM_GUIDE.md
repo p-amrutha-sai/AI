@@ -1,6 +1,6 @@
-# Nine-person team guide and module walkthrough
+# Ten-person team guide and module walkthrough
 
-This guide explains the delivered implementation and proposes responsibilities for nine group members. It does not assign past authorship to unnamed people. The implementation, experiments and documentation were produced with Codex assistance. Each member should record the work they actually perform while reviewing, validating, improving or extending it.
+This guide explains the delivered implementation and proposes responsibilities for ten group members. It does not assign past authorship to unnamed people. The implementation, experiments and documentation were produced with Codex assistance. Each member should record the work they actually perform while reviewing, validating, improving or extending it.
 
 ## Proposed allocation
 
@@ -15,8 +15,9 @@ This guide explains the delivered implementation and proposes responsibilities f
 |  Shubhan| Simulated user/merchant behavior and changing-world scenarios | `recsys/simulation.py` |
 |  Raag| Tests, baselines, metrics and experiment interpretation | `tests/test_modules.py`, `recsys/evaluation.py`, `results/` |
 |  Pranav| Integration, CLI, reproducibility, report and live demonstration | `recsys/platform.py`, `recsys/__main__.py`, `run_all.py`, `README.md`, `docs/` |
+|  Rajkumar| Synthetic catalog generation, data integrity, and automated report tooling | `data/generate_catalog.py`, `tools/build_report.py`, `results/charts/` |
 
-`CONTRIBUTIONS.md` specifies concrete evidence each person can produce. Member labels should be replaced with names once actual responsibilities are agreed. Nine team members and the six simulated shoppers are different concepts; there is no requirement for those numbers to match.
+`CONTRIBUTIONS.md` specifies concrete evidence each person can produce. Member labels should be replaced with names once actual responsibilities are agreed. Ten team members and the six simulated shoppers are different concepts; there is no requirement for those numbers to match.
 
 ## Module 1: Search and Constraint Satisfaction
 
@@ -81,6 +82,14 @@ I trained the delivered policy for 200 synthetic episodes and saved its Q-table 
 **Example:** If recommendations are repetitive and merchant exposure is uneven, the learner can select a diverse or fair strategy rather than always exploiting the highest purchase estimate. Which action it actually takes depends on its learned Q-values; no such action is guaranteed for every state.
 
 **Owner:** Member 6, supported by Members 7 and 8 for simulation and evaluation.
+
+## Tooling, Visualization and Dataset Integrity
+
+**Question answered:** How do we verify data provenance and visualize policy performance?
+
+I maintained the synthetic catalog generation script (`data/generate_catalog.py`) that populates products, prices, stock and delivery regions according to `data/DATA_CARD.md`. I also managed the automated report authoring and charting pipeline (`tools/build_report.py`), rendering benchmark results into standalone vector SVG figures (`results/charts/`) and compiling the evaluation report.
+
+**Owner:** Member 10 (Rajkumar), supporting Members 1, 8 and 9 on data integrity and demonstration.
 
 ## How the complete project works
 
